@@ -1,0 +1,14 @@
+<section>
+  <h2>Projetos</h2>
+  <p> Meus principais projetos desenvolvidos para estudo ou teste técnico.</p>
+  <div class="projects" *ngFor="let project of featuredProjects | async">
+    <app-featuted-project [featuredProject]="project" />
+  </div>
+</section>
+<section>
+  <h2>Outros Projetos</h2>
+  <div class="projects" *ngFor="let project of simpleProjects | async">
+    <app-simple-projects [simpleProject]="project" />
+  </div>
+</section>
+
