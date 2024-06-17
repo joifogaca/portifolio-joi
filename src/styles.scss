@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+/* CS Reset */
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+  font-family: "Manrope", sans-serif;
+
+}
+
+/* Color variables*/
+
+:root {
+  --text-p: #5D5D5D;
+  --primary-dark: #3a180e;
+  --primary: #cd8133;
+  --primary-light: #e9d19e;
+  --primary-tial: #fcf7ee;
+  --neutral-dark: #231b18;
+  --neutral-medium: #373a40;
+  --white: #fff;
+}
+
+h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  padding-bottom: 24px;
+}
+
+p {
+  color: var(--text-p);
+}

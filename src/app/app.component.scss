@@ -1,0 +1,28 @@
+body {
+  color: #000;
+}
+
+main {
+  padding: 40px 40px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+

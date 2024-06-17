@@ -1,7 +1,7 @@
-<div>
-  <img [ngSrc]="featuredProject.url_image" width="200" height="200" alt="imagem do projeto">
-  <div class="tags" *ngFor="let tag of featuredProject.tags">
-    <app-tag [tag]="tag"/>
+<div class="featuted-project">
+  <img [ngSrc]="featuredProject.url_image" width="230" height="200" alt="imagem do projeto">
+  <div class="tags" >
+    <app-tag *ngFor="let tag of featuredProject.tags" [tag]="tag"/>
   </div>
   <h3>{{ featuredProject.name }}</h3>
   <p>{{ featuredProject.description }}</p>

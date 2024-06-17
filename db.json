@@ -8,7 +8,7 @@
     "link_page": "https://joifogaca.github.io/marvel-angular/heroes",
     "link_github": "https://github.com/joifogaca/marvel-angular"
   },
-  {"id": 1,
+  {"id": 2,
     "name": "Repositório Ioasys",
     "description": "Uma aplicação Angular que realiza uma autenticação local. E lista os meus repósitórios do gitHub, utilizando a API do GitHub.",
     "tags": ["PrimeNg", "Routing", "Reactive Forms"],
@@ -16,30 +16,30 @@
     "link_page": "https://repositorios-ioasys.vercel.app/login",
     "link_github": "https://github.com/joifogaca/repositorios-ioasys"
   },
-  {"id": 1,
-    "name": "Projeto 1",
-    "description": "Projeto 1",
-    "tags": ["tag1", "tag2"],
-    "url_image": "https://picsum.photos/id/3/200/200",
-    "link_page": "https://google.com.br",
-    "link_github": "https://github.com/joifo"
+  {"id": 3,
+    "name": "Lista de Usuários",
+    "description": "Teste para vaga full-stack na empresa confitec em 2022. Atualmente o projeto está passando por uma atualização",
+    "tags": ["Gerenciamento de Estado", "Angular 9", "Ng-bootstrap"],
+    "url_image": "https://picsum.photos/id/9/200/200",
+    "link_page": "https://teste-confitec-git-master-joice-fogacas-projects.vercel.app/user",
+    "link_github": "https://github.com/joifogaca/Teste-Confitec"
   }
   ],
   "simple-projects": [
     {"id": 1,
-    "name": "Projeto simples 1",
-    "description": "Projeto 1",
-    "link_github": "https://github.com/joifo"
+    "name": "Dashboard Bootstrap",
+    "description": "O objetivo é simular um dashboard que funcione dinamicamente com os dados que recebera da API. Usando Bootstrap e JavaScript Vanille.",
+    "link_github": "https://github.com/joifogaca/DashboardBootstrap"
   },
-  {"id": 1,
-  "name": "Projeto simples 1",
-  "description": "Projeto 1",
-  "link_github": "https://github.com/joifo"
+  {"id": 2,
+  "name": "Luma API",
+  "description": "Desafio de consumo de API conforme o documento fornecido pela empresa no processo seletivo.",
+  "link_github": "https://github.com/joifogaca/LumaAPI"
 },
-{"id": 1,
-"name": "Projeto simples",
-"description": "Projeto 1",
-"link_github": "https://github.com/joifo"
+{"id": 3,
+"name": "Olho Vivo",
+"description": "Projeto em andamento, para estudo de uma API desenvolvida em .NET CORE",
+"link_github": "https://github.com/joifogaca/OlhoVivo"
 }
   ]
 }
