@@ -1,9 +1,4 @@
 
-
-body {
-  
-}
-
 main {
   box-sizing: border-box;
   padding: 20px 60px 20px 60px;
@@ -13,8 +8,8 @@ main {
 .menu {
   display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 30px;
+
 
   justify-content: flex-end;
 }
@@ -27,9 +22,10 @@ main {
   display: block;
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   padding: 20px 10px;
   text-decoration: none;
+  color: #181818;
 }
 
 
