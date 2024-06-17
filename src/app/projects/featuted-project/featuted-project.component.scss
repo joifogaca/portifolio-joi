@@ -3,16 +3,27 @@
   flex-direction: column;
   justify-content: space-between;
   width: 400px;
-  border-radius: 12px;
+  border-radius: 8px;
   min-height: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
   padding: 16px;
   margin: 0 20px 0 0;
+  background: #FFF;
+  gap: 10px;
 }
+
+.img-container {
+text-align: center;
+}
+
+.img-container img {
+  border-radius:  8px;
+  box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
+  }
 
 .header {
   flex: 1;
+  height: 400px;
 }
 
 .tags-container {

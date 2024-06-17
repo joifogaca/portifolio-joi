@@ -1,6 +1,9 @@
 <div class="featuted-project">
   <div class="header">
-    <img [ngSrc]="featuredProject.url_image" width="230" height="200" alt="imagem do projeto">
+    <div class="img-container">
+      <img [ngSrc]="featuredProject.url_image" width="280" height="180" alt="imagem do projeto">
+    </div>
+
     <div class="tags-container">
       <app-tag *ngFor="let tag of featuredProject.tags" [tag]="tag" />
     </div>
