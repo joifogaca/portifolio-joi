@@ -3,8 +3,24 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
 
 
-## Como rodar o projeto 
+## Deploy da aplicação (Vercel)
 
-`json-server --watch db.json`
+Aplicação rodando em produção:
 
-## Dependência 
+[portifolio-aozeekt1a-joice-fogacas-projects.vercel.app](portifolio-aozeekt1a-joice-fogacas-projects.vercel.app)
+
+
+## O que foi desenvolvido
+
+Um portifolio em Angular usando HTML e CSS, consumindo uma api.
+
+Links da api:
+
+https://6657bb375c3617052645b929.mockapi.io/api/portifolio/featured-projects
+
+https://6657bb375c3617052645b929.mockapi.io/api/portifolio/simple-projects
+
+
+## Como rodar o projeto
+
+Rode `ng serve` para rodar em ambiente de desenvolvimento. Acesse a URL http://localhost:4200/.
