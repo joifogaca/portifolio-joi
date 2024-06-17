@@ -24,3 +24,11 @@ https://6657bb375c3617052645b929.mockapi.io/api/portifolio/simple-projects
 ## Como rodar o projeto
 
 Rode `ng serve` para rodar em ambiente de desenvolvimento. Acesse a URL http://localhost:4200/.
+
+
+## Próximos passos
+
+[] Adiconar tratamento de erros nas requisições
+[] Tornar o layout responsivo
+[] Criação de teste unitário
+[] Adicionar cache
