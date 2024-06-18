@@ -12,7 +12,7 @@ Aplicação rodando em produção:
 
 ## O que foi desenvolvido
 
-Um portifolio em Angular usando HTML e CSS, consumindo uma api.
+Um portifolio em Angular usando HTML e CSS, consumindo uma api com teste unitários usando Jasmine.
 
 Links da api:
 

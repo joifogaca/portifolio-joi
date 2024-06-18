@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SimpleProjectsComponent } from './simple-projects.component';
+import { simpleProjectMock } from '../projects.mock';
 
 describe('SimpleProjectsComponent', () => {
   let component: SimpleProjectsComponent;
@@ -14,16 +15,18 @@ describe('SimpleProjectsComponent', () => {
 
     fixture = TestBed.createComponent(SimpleProjectsComponent);
     component = fixture.componentInstance;
-    component.simpleProject =  {
-      id: 1,
-        name: "Olho Vivo",
-        description: "Projeto em andamento, para estudo de uma API desenvolvida em .NET CORE",
-        link_github: "https://github.com/joifogaca/OlhoVivo"
-    }
+    component.simpleProject =  simpleProjectMock[0];
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render info card correctly', () => {
+    const card: HTMLElement = fixture.nativeElement.querySelector('.simple-project');
+    expect(card.textContent).toContain(component.simpleProject.name);
+    expect(card.textContent).toContain(component.simpleProject.description);
+  });
+
 });

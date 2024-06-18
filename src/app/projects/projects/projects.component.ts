@@ -11,11 +11,11 @@ import { SimpleProject } from '../simple-projects/simple-projects.model';
 })
 export class ProjectsComponent {
 
-  featuredProjects: Observable<FeaturedProject[]> | null = null;
-  simpleProjects: Observable<SimpleProject[]> | null = null;
+  featuredProjects$: Observable<FeaturedProject[]> | null = null;
+  simpleProjects$: Observable<SimpleProject[]> | null = null;
 
   constructor(private projectservice: ProjectsService) {
-    this.featuredProjects = projectservice.getFeaturedProjects();
-    this.simpleProjects = projectservice.getSimpleProjects();
+    this.featuredProjects$ = projectservice.getFeaturedProjects();
+    this.simpleProjects$ = projectservice.getSimpleProjects();
   }
 }

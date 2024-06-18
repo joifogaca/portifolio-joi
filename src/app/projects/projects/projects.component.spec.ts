@@ -1,3 +1,4 @@
+import { simpleProjectMock } from './../projects.mock';
 import { FeaturedProject } from './../featuted-project/featured-projects.model';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -6,6 +7,8 @@ import { ProjectsService } from '../projects.service';
 import { FeatutedProjectComponent } from '../featuted-project/featuted-project.component';
 import { SimpleProjectsComponent } from '../simple-projects/simple-projects.component';
 import { of } from 'rxjs';
+import { featuredProjectMock } from '../projects.mock';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -13,8 +16,8 @@ describe('ProjectsComponent', () => {
   let projectServiceSpy: jasmine.SpyObj<ProjectsService>;
   beforeEach(async () => {
     projectServiceSpy = jasmine.createSpyObj<ProjectsService>('ProjectsService', {
-      getFeaturedProjects: of([]),
-      getSimpleProjects: of([]),
+      getFeaturedProjects: of(featuredProjectMock),
+      getSimpleProjects: of(simpleProjectMock),
     });
     await TestBed.configureTestingModule({
       imports: [
@@ -26,7 +29,8 @@ describe('ProjectsComponent', () => {
       declarations: [ ProjectsComponent,
         FeatutedProjectComponent,
         SimpleProjectsComponent
-       ]
+       ],
+       schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
 
@@ -37,5 +41,20 @@ describe('ProjectsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should create and call ProjectsService', () => {
+    projectServiceSpy.getFeaturedProjects.and.returnValue(of(featuredProjectMock));
+    projectServiceSpy.getSimpleProjects.and.returnValue(of(simpleProjectMock));
+    // will trigger ngOnInit
+    fixture.detectChanges();
+    expect(component).toBeTruthy();
+    component.featuredProjects$?.subscribe(result => {
+      expect(result).toEqual(featuredProjectMock);
+    });
+
+    component.simpleProjects$?.subscribe(result => {
+      expect(result).toEqual(simpleProjectMock);
+    });
   });
 });

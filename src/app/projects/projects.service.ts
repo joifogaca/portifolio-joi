@@ -8,7 +8,7 @@ import { SimpleProject } from './simple-projects/simple-projects.model';
 })
 export class ProjectsService {
 
-  private readonly apiBaseUrl = ' https://6657bb375c3617052645b929.mockapi.io/api/portifolio/';
+  private readonly apiBaseUrl = 'https://6657bb375c3617052645b929.mockapi.io/api/portifolio';
 
   constructor(private http: HttpClient) { }
 
