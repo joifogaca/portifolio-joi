@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Aplicação rodando em produção:
 
-[portifolio-aozeekt1a-joice-fogacas-projects.vercel.app](portifolio-aozeekt1a-joice-fogacas-projects.vercel.app)
+[https://portifolio-joi.vercel.app/about](https://portifolio-joi.vercel.app/about)
 
 
 ## O que foi desenvolvido
