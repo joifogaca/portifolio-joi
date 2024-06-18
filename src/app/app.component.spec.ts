@@ -24,6 +24,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('nav a')?.textContent).toContain("Sobre");
+    expect(compiled.querySelector('#about')?.textContent).toContain("Sobre");
+    expect(compiled.querySelector('#projects')?.textContent).toContain("Projetos");
   });
 });

@@ -16,7 +16,6 @@ import { SimpleProjectsComponent } from './simple-projects/simple-projects.compo
     FeatutedProjectComponent,
     TagComponent,
     SimpleProjectsComponent
-
   ],
   providers: [ProjectsService],
   imports: [

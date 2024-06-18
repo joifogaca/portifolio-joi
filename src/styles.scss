@@ -17,20 +17,8 @@ body {
   color: #000;
 }
 
-/* Color variables*/
 
-:root {
-  --text-p: #5D5D5D;
-  --primary-dark: #3a180e;
-  --primary: #cd8133;
-  --primary-light: #e9d19e;
-  --primary-tial: #fcf7ee;
-  --neutral-dark: #231b18;
-  --neutral-medium: #373a40;
-  --white: #fff;
-}
-
-h1{
+h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -39,5 +27,5 @@ h1{
 }
 
 p {
-  color: var(--text-p);
+  color: #5D5D5D;
 }
