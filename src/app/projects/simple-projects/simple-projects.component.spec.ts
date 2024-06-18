@@ -14,6 +14,12 @@ describe('SimpleProjectsComponent', () => {
 
     fixture = TestBed.createComponent(SimpleProjectsComponent);
     component = fixture.componentInstance;
+    component.simpleProject =  {
+      id: 1,
+        name: "Olho Vivo",
+        description: "Projeto em andamento, para estudo de uma API desenvolvida em .NET CORE",
+        link_github: "https://github.com/joifogaca/OlhoVivo"
+    }
     fixture.detectChanges();
   });
 

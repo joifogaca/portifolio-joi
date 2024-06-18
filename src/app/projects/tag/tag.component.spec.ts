@@ -14,6 +14,7 @@ describe('TagComponent', () => {
 
     fixture = TestBed.createComponent(TagComponent);
     component = fixture.componentInstance;
+    component.tag = "Rxjs";
     fixture.detectChanges();
   });
 
