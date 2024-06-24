@@ -25,6 +25,16 @@ https://6657bb375c3617052645b929.mockapi.io/api/portifolio/simple-projects
 
 Rode `ng serve` para rodar em ambiente de desenvolvimento. Acesse a URL http://localhost:4200/.
 
+#### Com docker e Nginx
+
+Na raiz do projeto, realizar o build:
+
+`docker build -t angular-portifolio-joi . `
+
+Rodar a aplicação:
+
+`docker run -p 4200:4200 angular-angular-portifolio-joi `
+
 
 ## Próximos passos
 
