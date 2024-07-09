@@ -1,44 +1,53 @@
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-#myphoto {
-  width: 121px;
-  height: 121px;
-  border-radius: 50%;
-  box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
-}
+  p {
+    margin-bottom: 20px;
+  }
 
-section {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  #myphoto {
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
+  }
 
-}
+  #name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
 
-.intro p {
-  margin-bottom: 20px;
-}
+  #title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #5E81FC;
+  }
 
-#name {
-  font-size: 24px;
-  font-weight: 600;
-  color: #000;
-}
+  #introduce {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 120px;
+    color: #5D5D5D;
+    text-align: center;
+    white-space: pre-line;
+    margin-bottom: 30px;
+  }
 
-#title {
-  font-size: 36px;
-  font-weight: 600;
-  color: #5E81FC;
-}
+  }
 
-#introduce {
-  font-size: 22px;
-  font-weight: 500;
-  padding: 0 120px;
-  color: #5D5D5D;
-  text-align: center;
-  white-space: pre-line;
-  margin-bottom: 30px;
-}
+
+
+
+
+
+
+
+
+
 
 .social-midia img {
   width: 30px;

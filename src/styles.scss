@@ -5,27 +5,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+$bg-body: #EDF0FF;
+$font-color: #5D5D5D;
+$font-family: 'Manrope', sans-serif;
 
-html, body {
+html {
   height: 100%;
   margin: 0;
-}
 
-body {
-  background-color: #EDF0FF;
-  font-family: "Manrope", sans-serif;
-  color: #000;
-}
+  body {
+    background-color: $bg-body;
+    font-family: $font-family;
+    color: $font-color;
+  }
 
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    padding-bottom: 24px;
+  }
 
-h1 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 120%;
-  padding-bottom: 24px;
-}
-
-p {
-  color: #5D5D5D;
 }
