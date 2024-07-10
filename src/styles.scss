@@ -11,9 +11,9 @@ $font-family: 'Manrope', sans-serif;
 
 html {
   height: 100%;
-  margin: 0;
 
   body {
+    margin: 0;
     background-color: $bg-body;
     font-family: $font-family;
     color: $font-color;
@@ -26,5 +26,34 @@ html {
     line-height: 120%;
     padding-bottom: 24px;
   }
+
+}
+
+.btn {
+  padding: 8px 16px;
+  display: block;
+  border-radius:  48px;
+  margin-right: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-secondary {
+  border: 2px solid #615EFC;
+  color: #615EFC;
+
+  &:hover {
+    color:  #ab99e4;
+  }
+}
+
+.btn-primary {
+background: #615EFC;
+color: white;
+
+&:hover {
+  background: #ab99e4;
+  color: white;
+}
 
 }

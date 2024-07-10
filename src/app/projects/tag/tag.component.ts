@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tag.component.scss']
 })
 export class TagComponent {
-@Input() tag: string = '';
+@Input() tag = '';
 
 }

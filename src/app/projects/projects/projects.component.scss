@@ -1,24 +1,23 @@
+
+section{
+  margin:  auto auto 40px auto;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 15px;
+  }
+  p {
+    color: #5D5D5D;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+}
+
 .projects {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: 600;
-  font-style: normal;
-  margin-bottom: 15px;
-
-}
-
-section{
-  margin:  auto auto 40px auto;
-}
-
-section p {
-  color: #5D5D5D;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 30px;
 }

@@ -20,12 +20,12 @@ h3 {
 
 .img-container {
 text-align: center;
-}
 
-.img-container img {
+img {
   border-radius:  8px;
   box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
   }
+}
 
 .header {
   flex: 1;
@@ -49,24 +49,7 @@ min-height: 48px;
   padding: 32px 0 0 0;
 }
 
-.btn {
-  padding: 8px 16px;
-  display: block;
-  border-radius:  48px;
-  margin-right: 16px;
-  text-decoration: none;
-  text-align: center;
-}
 
-.btn-secondary {
-  border: 2px solid #615EFC;
-  color: #615EFC;
-}
-
-.btn-primary {
-background: #615EFC;
-color: white;
-}
 
 
 
