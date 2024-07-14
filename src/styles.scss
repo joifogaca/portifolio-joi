@@ -11,8 +11,10 @@ $font-family: 'Manrope', sans-serif;
 
 html {
   height: 100%;
+  width: 100%;
 
   body {
+    width: 90%;
     margin: 0;
     background-color: $bg-body;
     font-family: $font-family;
@@ -22,18 +24,36 @@ html {
   h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 120%;
-    padding-bottom: 24px;
+    padding-bottom: 20.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: #5D5D5D;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
   }
 
 }
 
 .btn {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   display: block;
   border-radius:  48px;
-  margin-right: 16px;
+  margin-right: 0.8rem;
   text-decoration: none;
   text-align: center;
 }

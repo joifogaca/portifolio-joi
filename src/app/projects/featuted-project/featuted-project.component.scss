@@ -2,26 +2,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 400px;
-  border-radius: 8px;
+  //width: 400px;
+  width: 95%;
+  max-width:  95%;
+  border-radius: 2%;
   min-height: 100%;
   box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
-  padding: 16px;
-  margin: 0 20px 0 0;
+  padding: 1rem;
+  margin-bottom: 1rem;
   background: #FFF;
-  gap: 10px;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 16px 0;
-}
+
 
 .img-container {
-text-align: center;
+width: 50%;
+
 
 img {
+  width: 100%;
   border-radius:  8px;
   box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
   }
@@ -29,7 +28,11 @@ img {
 
 .header {
   flex: 1;
-  height: 400px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .tags-container {
@@ -37,7 +40,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: start;
 align-items: center;
-padding: 16px 0;
+padding: 1.5rem 0;
 width: 100%;
 min-height: 48px;
 
