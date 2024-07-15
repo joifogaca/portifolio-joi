@@ -1,3 +1,5 @@
+
+
 #featuted-project {
   display: flex;
   flex-direction: column;
@@ -14,14 +16,13 @@
   background: #FFF;
 }
 
-section{
-  margin-bottom: 1rem;
-}
+
 
 .projects {
   display: flex;
  // flex-wrap: wrap;
   //flex-flow: row wrap;
+  margin-top: 1rem;
   width: 100%;
   justify-content: space-between;
 
