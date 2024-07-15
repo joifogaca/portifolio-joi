@@ -2,13 +2,13 @@
   <h2>Projetos Angular</h2>
   <p> Meus principais projetos desenvolvidos para estudo ou teste técnico.</p>
   <div class="projects" >
-    <app-featuted-project *ngFor="let project of featuredProjects$ | async" [featuredProject]="project" />
+    <app-featuted-project id="featuted-project" *ngFor="let project of featuredProjects$ | async" [featuredProject]="project" />
   </div>
 </section>
 <section>
   <h2>Outros Projetos</h2>
   <div class="projects" >
-    <app-simple-projects *ngFor="let project of simpleProjects$ | async" [simpleProject]="project" />
+    <app-simple-projects id="simple-project" *ngFor="let project of simpleProjects$ | async" [simpleProject]="project" />
   </div>
 </section>
 
