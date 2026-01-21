@@ -1,14 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 80%;
 
+}
 
+.container-projects {
+   overflow-y: auto;
+
+}
 #featuted-project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  //width: 400px;
+
   width: 95%;
   max-width:  95%;
   border-radius: 2%;
-  min-height: 100%;
   box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
   padding: 1rem;
   margin-bottom: 1rem;
@@ -22,6 +31,7 @@
   display: flex;
   margin-top: 1rem;
   width: 100%;
+  overflow-y: auto;
   justify-content: space-between;
 
 }

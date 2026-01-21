@@ -1,14 +1,17 @@
-<section>
+<div class="container">
   <h2>Projetos Angular</h2>
   <p> Meus principais projetos desenvolvidos para estudo ou teste técnico.</p>
+  <div class="container-projects">
+  <section>
   <div class="projects" >
     <app-featuted-project id="featuted-project" *ngFor="let project of featuredProjects$ | async" [featuredProject]="project" />
   </div>
 </section>
-<section>
+<!-- <section>
   <h2>Outros Projetos</h2>
   <div class="projects" >
     <app-simple-projects id="simple-project" *ngFor="let project of simpleProjects$ | async" [simpleProject]="project" />
   </div>
-</section>
-
+</section> -->
+</div>
+</div>

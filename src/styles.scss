@@ -16,18 +16,23 @@ $bg-body: #EDF0FF;
 $font-color: #5D5D5D;
 $font-family: 'Poppins', sans-serif;
 
+html, body {
+height: 100%;
+margin: 0;
+}
+
 html {
-  // height: 100%;
-  // width: 100%;
+
+   width: 100%;
 
   body {
-    width: 95vw;
-    height: 100vh;
-    margin: 1rem;
+    max-width: 95vw;
+    height: 99vh;
+    margin: 1rem auto;
     background-color: $bg-body;
     font-family: $font-family;
     color: $font-color;
-    overflow: hidden;
+     overflow: hidden;
   }
 
   h1 {
