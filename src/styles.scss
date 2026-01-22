@@ -38,24 +38,25 @@ html {
   h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 120%;
 
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     font-style: normal;
 
   }
   p {
     color: #5D5D5D;
-    font-weight: 300;
+    font-size: 0.8;
+    font-weight: 200;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -64,7 +65,7 @@ html {
 .btn {
   padding: 0.5rem 1rem;
   display: block;
-  border-radius:  48px;
+  border-radius:  5px;
   margin-right: 0.8rem;
   text-decoration: none;
   text-align: center;
@@ -80,12 +81,23 @@ html {
 }
 
 .btn-primary {
-background: #615EFC;
+background: #3937b9;
 color: white;
 
 &:hover {
-  background: #ab99e4;
+  background: #0703e7;;
   color: white;
 }
 
+}
+
+.icon-link:hover
+{
+  color: #3937b9;
+}
+.icon-link,
+.icon-link:active,
+.icon-link:focus {
+  color: #181818;
+  text-decoration: none;
 }
