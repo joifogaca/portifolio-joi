@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ProjectsService } from 'src/app/projects/projects.service';
+import { Article } from '../article/article.models';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-about',
@@ -6,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-description = "Sou desenvolvedora desde de 2018, com foco principal no Front-End com Angular, mas também atuando com criação de API REST com .NET CORE. \nValorizo a utilização de Boas práticas, como SOLID, teste unitários."
+
+  articles$: Observable<Article[]> | null = null;
+   constructor(private projectservice: ProjectsService) {
+      this.articles$ = projectservice.getArticles();
+
+    }
 
 }

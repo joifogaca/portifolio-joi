@@ -1,4 +1,5 @@
 
+<div class="container-main">
 <section id="intro">
   <div id="nome-foto">
   <img id="myphoto" src="../../../assets/img/joice_desenho.png" alt="joao" />
@@ -7,7 +8,11 @@
     <i class="fa-brands fa-angular" style="color: #FF2C2C;"></i>
   </p>
   </div>
-  <div id="introduce">{{ description }}</div>
-
+  <div id="introduce">
+    <p>Sou Desenvolvedora Front-end com foco em Angular, atuando no desenvolvimento e sustentação de aplicações web complexas, especialmente em ambientes corporativos e sistemas de grande escala.</p>
+  </div>
 </section>
-
+<section class="artigos">
+  <app-article *ngFor="let article of articles$ | async" [article]="article" />
+</section>
+</div>
