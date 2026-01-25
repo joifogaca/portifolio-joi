@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { featuredProjectMock, simpleProjectMock } from './projects.mock';
 import { ProjectsService } from './projects.service';
+import { ARTICLES_MOCKS } from '../about/ARTICLES-MOCK';
 
 describe('ProjectsService', () => {
   let service: ProjectsService;
@@ -10,6 +11,7 @@ describe('ProjectsService', () => {
   const API = 'https://6657bb375c3617052645b929.mockapi.io/api/portifolio';
   const API_FEATURED = `${API}/featured-projects`;
   const API_SIMPLE = `${API}/simple-projects`;
+  const API_ARTICLES = `${API}/articles`;
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
@@ -45,4 +47,14 @@ describe('ProjectsService', () => {
     req.flush(featuredProjectMock);
   });
 
+  it('should list all Articles', () => {
+    service.getArticles().subscribe(articles => {
+      expect(articles).toBeTruthy();
+      expect(articles.length).toBe(ARTICLES_MOCKS.length);
+    });
+
+    const req = httpTestingController.expectOne(API_ARTICLES);
+    expect(req.request.method).toEqual('GET');
+    req.flush(ARTICLES_MOCKS);
+  });
 });

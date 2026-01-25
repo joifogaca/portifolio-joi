@@ -25,8 +25,10 @@ describe('FeatutedProjectComponent', () => {
   });
 
   it('should render info card correctly', () => {
-    const card: HTMLElement = fixture.nativeElement.querySelector('.featuted-project');
-    expect(card.textContent).toContain(component.featuredProject.name);
-    expect(card.textContent).toContain(component.featuredProject.description);
+    const project_name: HTMLElement = fixture.nativeElement.querySelector('.project-name');
+    expect(project_name.textContent).toContain(component.featuredProject.name);
+
+    const project_description: HTMLElement = fixture.nativeElement.querySelector('.project-description');
+    expect(project_description.textContent).toContain(component.featuredProject.description);
   });
 });

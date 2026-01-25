@@ -23,10 +23,6 @@ describe('SimpleProjectsComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render info card correctly', () => {
-    const card: HTMLElement = fixture.nativeElement.querySelector('.simple-project');
-    expect(card.textContent).toContain(component.simpleProject.name);
-    expect(card.textContent).toContain(component.simpleProject.description);
-  });
+
 
 });

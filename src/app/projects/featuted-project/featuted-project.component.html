@@ -1,11 +1,11 @@
 
-  <div class="header">
-    <h3>{{ featuredProject.name }}</h3>
+  <div class="header ">
+    <h3 class="project-name">{{ featuredProject.name }}</h3>
     <a class="icon-link" [href]="featuredProject.link_github">
         <i class="fa-brands fa-github"></i>
       </a>
       </div>
-    <p>{{ featuredProject.description }}</p>
+    <p class="project-description">{{ featuredProject.description }}</p>
     <div class="tags-container">
       <app-tag *ngFor="let tag of featuredProject.tags" [tag]="tag" />
     </div>

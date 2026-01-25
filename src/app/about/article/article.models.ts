@@ -1,5 +1,5 @@
 export interface Article {
-  id: number;
+  id: string;
   createdAt: Date;
   title: string;
   imagem: string;
