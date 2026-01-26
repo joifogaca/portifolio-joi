@@ -13,6 +13,8 @@
   </div>
 </section>
 <section class="artigos">
-  <app-article *ngFor="let article of articles$ | async" [article]="article" />
+  <ng-container *ngFor="let article of articles$ | async">
+    <app-article  [article]="article" />
+  </ng-container>
 </section>
 </div>

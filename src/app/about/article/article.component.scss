@@ -1,14 +1,13 @@
 .card-link {
   text-decoration: none; /* Remove o sublinhado azul padrão do link */
-  color: inherit;       /* Mantém a cor do texto original do card */
-  display: block;       /* Faz o link ocupar todo o espaço do card */
+  color: inherit;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%; /* Mantém a cor do texto original do card */      /* Faz o link ocupar todo o espaço do card */
 }
 
-.container:hover {
-  width: 46%;
-  font-size: 1.2rem;
- // color: white;
-}
+
 .container {
   display: flex;
   gap: 1rem;
@@ -16,14 +15,14 @@
   align-items: center;
   padding: 2rem;
   background-color: #FFF;
-  width: 45%;
+
   border-radius: 2%;
   cursor: pointer;
   box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
 }
 
 img {
-  width: 40%;
-  height: 20%;
+  width: 150px;
+  height: 90px;
   border-radius: 0.8rem;
 }
