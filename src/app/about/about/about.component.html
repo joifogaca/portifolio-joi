@@ -9,9 +9,13 @@
   </p>
   </div>
 </section>
-<section class="artigos">
+
+<section class="container-artigos">
+  <h4 >Artigos no Médium</h4>
+  <div class="artigos">
   <ng-container *ngFor="let article of articles$ | async">
     <app-article  [article]="article" />
   </ng-container>
+  </div>
 </section>
 </div>
