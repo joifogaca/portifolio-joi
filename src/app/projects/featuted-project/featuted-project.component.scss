@@ -34,8 +34,33 @@ min-height: 48px;
   padding: 0.5rem 0 0 0;
 }
 
+@media (max-width: 700px) {
+  .tags-container {
+    display: none;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 
+  a {
+    font-size: 0.8rem;
+  }
+}
 
+@media (max-width: 585px) {
 
+ p {
+    font-size: 0.7rem;
+  }
 
+  a {
+    font-size: 0.7rem;
+  }
 
+h3 {
+  font-size: 0.9rem;
+}
+.buttons-container {
+  padding: 0.3rem 0 0 0;
+}
+}
