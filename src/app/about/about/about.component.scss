@@ -3,6 +3,7 @@ display: flex;
 flex-direction: column;
 margin: 1rem;
 gap:2rem;
+
 }
 
 #intro {
@@ -12,7 +13,6 @@ gap:2rem;
   height: 100%;
 
 
-
   #nome-foto {
     display: flex;
     flex-direction: column;
@@ -20,16 +20,16 @@ gap:2rem;
   }
 
   #myphoto {
-    width: 30%;
-    height: 30%;
-    min-width: 120px;
-    min-height: 120px;
+    width: 20%;
+    height: 20%;
     margin-bottom: 1rem;
     border-radius: 50%;
     box-shadow: 0px 12px 3px 0px rgba(0, 0, 0, 0.00), 0px 8px 3px 0px rgba(0, 0, 0, 0.01), 0px 4px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 1px 0px rgba(0, 0, 0, 0.08);
   }
 
-  #name {
+  }
+
+    #name {
     font-size: 1.2rem;
     font-weight: 400;
     color: #000;
@@ -40,22 +40,37 @@ gap:2rem;
     font-weight: 500;
   }
 
-  #introduce {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap:0.6rem;
-    width: 90%;
-    white-space: pre-line;
-  }
-
-  }
-
   .artigos {
     display: flex;
     gap:2rem
   }
 
+
+
+@media (max-width: 700px) {
+  .artigos {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+   #myphoto {
+    width: 10%;
+    height: 10%;
+  }
+
+   #name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+  }
+
+    #title {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+}
 
 
 

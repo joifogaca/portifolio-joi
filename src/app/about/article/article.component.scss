@@ -1,8 +1,11 @@
 .card-link {
+
   text-decoration: none; /* Remove o sublinhado azul padrão do link */
   color: inherit;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   width: 100%; /* Mantém a cor do texto original do card */      /* Faz o link ocupar todo o espaço do card */
 }
@@ -13,7 +16,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #FFF;
 
   border-radius: 2%;
@@ -25,4 +28,20 @@ img {
   width: 150px;
   height: 90px;
   border-radius: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .card-link {
+    flex-direction: column;
+  }
+
+ h3 {
+  font-weight: 300;
+  font-size: 1rem;
+ }
+
+ img {
+  width: 0px;
+  height: 0px;
+}
 }
